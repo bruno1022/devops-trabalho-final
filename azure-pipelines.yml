@@ -10,7 +10,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-- task: SonarSource.sonarcloud.14d9cde6-c1da-4d55-aa01-2965cd301255.SonarCloudPrepare@1
+- task: SonarSource.sonarcloud.0946f1b9437f56007501e5eeff2f73d29297b280.SonarCloudPrepare@1
   displayName: 'Prepare analysis on SonarCloud'
   inputs:
     SonarCloud: devops-trabalho-final
@@ -30,5 +30,5 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-- task: SonarSource.sonarcloud.38b27399-a642-40af-bb7d-9971f69712e8.SonarCloudPublish@1
+- task: SonarSource.sonarcloud.0946f1b9437f56007501e5eeff2f73d29297b280.SonarCloudPublish@1
   displayName: 'Publish Quality Gate Result'
