@@ -5,6 +5,4 @@ WORKDIR /local/git
 # Clone the repository
 RUN git clone https://github.com/bruno1022/devops-trabalho-final
 # CD to the folder we've just cloned 
-RUN cd devops-trabalho-final/
-# Execute maven build
-CMD ["mvn", "clean install"]
+WORKDIR /local/git/devops-trabalho-final
